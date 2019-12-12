@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run -e CI=true rmduran65/multi-docker-test npm run test
   
-after_sucess:
+after_success:
   - docker build -t rmduran65/multi-client ./client
   - docker build -t rmduran65/multi-nginx ./nginx
   - docker build -t rmduran65/multi-server ./server
