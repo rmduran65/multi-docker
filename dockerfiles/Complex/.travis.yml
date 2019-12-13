@@ -3,10 +3,10 @@ services:
   - docker
   
 before_install:
-  - docker build -t rmduran65/multi-docker-test -f ./client/dockerfile.dev ./client
+  - docker build -t rmduran65/mul-doc -f ./client/dockerfile.dev ./client
   
 script:
-  - docker run -e CI=true rmduran65/multi-docker-test npm run test
+  - docker run -e CI=true rmduran65/mul-doc npm run test
   
 after_success:
   - docker build -t rmduran65/multi-client ./client
