@@ -1,7 +1,5 @@
 language: generic
 
-sudo: required
-
 before_install:
   - docker build -t rmduran65/mul-doc -f ./client/dockerfile.dev ./client
   
