@@ -1,6 +1,4 @@
-language: python
-python:
-  - "3.5"
+language: bash
 
 before_install:
   - docker build -t rmduran65/mul-doc -f ./client/dockerfile.dev ./client
