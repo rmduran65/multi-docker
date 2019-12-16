@@ -1,6 +1,4 @@
-os: windows
-
-language: bash
+language: Generic
 
 before_install:
   - docker build -t rmduran65/mul-doc -f ./client/dockerfile.dev ./client
