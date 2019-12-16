@@ -1,8 +1,14 @@
 language: generic
+
 sudo: required
+
+language: generic
+
 services:
   - docker
   
+language: generic
+
 before_install:
   - docker build -t rmduran65/mul-doc -f ./client/dockerfile.dev ./client
   
